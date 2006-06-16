@@ -1,0 +1,138 @@
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' cssed-0.4.0-orig/CYGWIN-PATCHES/README cssed-0.4.0/CYGWIN-PATCHES/README
+--- cssed-0.4.0-orig/CYGWIN-PATCHES/README	1969-12-31 18:00:00.000000000 -0600
++++ cssed-0.4.0/CYGWIN-PATCHES/README	2006-02-12 16:30:48.296875000 -0600
+@@ -0,0 +1,113 @@
++cssed
++-------------------------------------------
++cssed is a small but powerful CSS editor for web developing.
++It features auto completion, CSS syntax validation, and other utili-
++ties to help web developer to create and maintain CSS style sheets.
++
++Runtime requirements:
++  cygwin-1.5.19-4
++  atk-runtime-1.9.1-1
++  glib2-runtime-2.6.6-2
++  gtk2-x11-runtime-2.6.10-1
++  libxml2-2.6.22-1
++
++Build requirements:
++(besides corresponding -devel packages)
++  cygwin-1.5.19-4
++  autoconf2.5-2.59-3
++  automake1.9-1.9.6-1
++  binutils-20050610-1
++  gawk-3.1.5-1
++  gcc-core-3.4.4-1
++  make-3.80-1
++  pkgconfig-0.17.2-2
++  sed-4.1.4-1
++
++Canonical homepage:
++  http://cssed.sourceforge.net/
++
++Canonical download:
++  http://prdownloads.sourceforge.net/cssed/
++
++-------------------------------------------
++
++Build instructions:
++  unpack cssed-0.4.0-1-src.tar.bz2
++    if you use setup to install this src package, it will be
++	 unpacked under /usr/src automatically
++  cd /usr/src
++  ./cssed-0.4.0-1.sh all
++
++This will create:
++  /usr/src/cssed-0.4.0-1-src.tar.bz2
++  /usr/src/cssed-0.4.0-1.tar.bz2
++
++-------------------------------------------
++
++Files included in the binary package:
++
++  /usr/bin/cssed.exe
++  /usr/share/cssed/data/cssed-cfg.xml
++  /usr/share/cssed/data/cssed-def.dtd
++  /usr/share/cssed/data/cssed-def.xml
++  /usr/share/cssed/pixmaps/arrow.png
++  /usr/share/cssed/pixmaps/color_wizard.png
++  /usr/share/cssed/pixmaps/color_wizard_menu.png
++  /usr/share/cssed/pixmaps/cssed-about.png
++  /usr/share/cssed/pixmaps/cssed-icon.png
++  /usr/share/cssed/pixmaps/dlg_border.png
++  /usr/share/cssed/pixmaps/dlg_box.png
++  /usr/share/cssed/pixmaps/dlg_box_menu.png
++  /usr/share/cssed/pixmaps/dlg_margin.png
++  /usr/share/cssed/pixmaps/dlg_padding.png
++  /usr/share/cssed/pixmaps/document_info.png
++  /usr/share/cssed/pixmaps/document_info_menu.png
++  /usr/share/cssed/pixmaps/doc_close.png
++  /usr/share/cssed/pixmaps/font.png
++  /usr/share/cssed/pixmaps/hide_footer.png
++  /usr/share/cssed/pixmaps/hide_footer_menu.png
++  /usr/share/cssed/pixmaps/hide_sidebar.png
++  /usr/share/cssed/pixmaps/hide_sidebar_menu.png
++  /usr/share/cssed/pixmaps/scan_selector.png
++  /usr/share/cssed/pixmaps/scan_selector_menu.png
++  /usr/share/cssed/pixmaps/selector_wizard.png
++  /usr/share/cssed/pixmaps/selector_wizard_menu.png
++  /usr/share/cssed/pixmaps/show_footer.png
++  /usr/share/cssed/pixmaps/show_footer_menu.png
++  /usr/share/cssed/pixmaps/show_sidebar.png
++  /usr/share/cssed/pixmaps/show_sidebar_menu.png
++  /usr/share/cssed/pixmaps/validate.png
++  /usr/share/cssed/pixmaps/validate_dump.png
++  /usr/share/cssed/pixmaps/validate_dump_menu.png
++  /usr/share/cssed/pixmaps/validate_menu.png
++  /usr/share/doc/Cygwin/cssed-0.4.0.README
++  /usr/share/doc/cssed-0.4.0/AUTHORS
++  /usr/share/doc/cssed-0.4.0/ChangeLog
++  /usr/share/doc/cssed-0.4.0/COPYING
++  /usr/share/doc/cssed-0.4.0/INSTALL
++  /usr/share/doc/cssed-0.4.0/NEWS
++  /usr/share/doc/cssed-0.4.0/README
++  /usr/share/locale/ca/LC_MESSAGES/cssed.mo
++  /usr/share/locale/de/LC_MESSAGES/cssed.mo
++  /usr/share/locale/es/LC_MESSAGES/cssed.mo
++  /usr/share/locale/fr/LC_MESSAGES/cssed.mo
++  /usr/share/locale/gl/LC_MESSAGES/cssed.mo
++  /usr/share/locale/it/LC_MESSAGES/cssed.mo
++  /usr/share/man/man1/cssed.1.gz
++
++------------------
++
++Port Notes:
++
++----- version 0.4.0-1 -----
++Version bump.
++
++----- version 0.3.0-1 -----
++Version bump.
++
++----- version 0.2.1-1 -----
++Initial release for Cygwin.
++
++
++Cygwin port maintained by:
++http://cygwinports.dotsrc.org/
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' cssed-0.4.0-orig/CYGWIN-PATCHES/setup.hint cssed-0.4.0/CYGWIN-PATCHES/setup.hint
+--- cssed-0.4.0-orig/CYGWIN-PATCHES/setup.hint	1969-12-31 18:00:00.000000000 -0600
++++ cssed-0.4.0/CYGWIN-PATCHES/setup.hint	2006-02-12 16:30:48.312500000 -0600
+@@ -0,0 +1,6 @@
++category: Editors Gnome
++requires: cygwin atk-runtime glib2-runtime gtk2-x11-runtime libxml2
++sdesc: "GTK2 CSS editor"
++ldesc: "cssed is a small but powerful CSS editor for web developing.
++It features auto completion, CSS syntax validation, and other utili-
++ties to help web developer to create and maintain CSS style sheets."
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' cssed-0.4.0-orig/src/Makefile.am cssed-0.4.0/src/Makefile.am
+--- cssed-0.4.0-orig/src/Makefile.am	2005-09-28 04:47:07.000000000 -0500
++++ cssed-0.4.0/src/Makefile.am	2005-11-22 19:40:42.993241500 -0600
+@@ -65,5 +65,5 @@
+ 	xpm-icons.h \
+ 	filetypes.h
+ 
+-cssed_LDADD = @PACKAGE_LIBS@  ../scintilla/gtk/libscintilla.a ../libcroco/parser/libcroco.a
+-cssed_LINK = g++ -DGTK -o cssed
++cssed_LDADD = ../scintilla/gtk/libscintilla.a ../libcroco/parser/libcroco.a $(PACKAGE_LIBS)
++cssed_LINK = $(CXX) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
