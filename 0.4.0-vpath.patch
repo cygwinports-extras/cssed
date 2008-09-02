@@ -1,0 +1,13 @@
+--- origsrc/cssed-0.4.0/scintilla/gtk/Makefile.am	2008-09-02 00:41:14.766000200 -0500
++++ src/cssed-0.4.0/scintilla/gtk/Makefile.am	2008-09-02 00:41:46.484547200 -0500
+@@ -99,8 +99,8 @@
+ 
+ libscintilla_a_LIBADD = scintilla-marshal.o
+ 
+-scintilla-marshal.o: scintilla-marshal.h
+-	gcc @PACKAGE_CFLAGS@ -c scintilla-marshal.c
++scintilla-marshal.o: scintilla-marshal.c
++	gcc @PACKAGE_CFLAGS@ -c $<
+ 
+ marshallers: scintilla-marshal.list
+ 	glib-genmarshal --prefix scintilla_marshal $(srcdir)/scintilla-marshal.list --header > scintilla-marshal.h

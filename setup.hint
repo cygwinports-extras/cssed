@@ -1,6 +1,6 @@
 category: Editors Gnome
-requires: cygwin atk-runtime glib2-runtime gtk2-x11-runtime libxml2
-sdesc: "GTK2 CSS editor"
+requires: cygwin atk glib2 gdk-pixbuf2 gtk2-x11 libintl8 libxml2 pango
+sdesc: "GTK+ CSS editor with plugin support"
 ldesc: "cssed is a small but powerful CSS editor for web developing.
 It features auto completion, CSS syntax validation, and other utili-
 ties to help web developer to create and maintain CSS style sheets."
