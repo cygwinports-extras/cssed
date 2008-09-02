@@ -1,7 +1,7 @@
 inherit gnome2
 
-
-
+DESCRIPTION="GTK+ CSS Editor"
+HOMEPAGE="http://cssed.sourceforge.net/"
 SRC_URI="mirror://sourceforge/cssed/${P}.tar.gz"
 PATCH_URI="0.4.0-as-needed.patch
            0.4.0-plugin-implib.patch
